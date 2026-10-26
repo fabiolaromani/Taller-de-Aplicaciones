@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades - Taller de Aplicaciones</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/unidades.css">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body class="dashboard-layout">
+
+    <!-- ================= BARRA LATERAL IZQUIERDA (SIDEBAR) ================= -->
+    <aside class="sidebar">
+        <div class="sidebar-top">
+            <!-- Marca / Logo -->
+            <a href="../index.html" class="sidebar-brand">
+                <div class="logo-box">
+                    <img src="../Imagenes/Upla.png" alt="Logo UPLA">
+                </div>
+                <div class="brand-info">
+                    <strong>UPLA</strong>
+                    <span>Ingeniería de Sistemas</span>
+                </div>
+            </a>
+
+            <!-- Perfil Usuario Corto -->
+            <div class="sidebar-user">
+                <div class="user-avatar-initials">
+                    <span>FR</span>
+                </div>
+                <div class="user-details">
+                    <strong>Fabiola Romani</strong>
+                    <span>U00058J</span>
+                </div>
+            </div>
+
+            <!-- Menú de Navegación -->
+            <nav class="sidebar-menu">
+                <a href="#unidad1" class="menu-item active">
+                    <i class="fa-solid fa-border-all"></i>
+                    <span>Vista general</span>
+                </a>
+                <a href="#unidad1" class="menu-item">
+                    <i class="fa-solid fa-1"></i>
+                    <span>Unidad uno</span>
+                </a>
+                <a href="#unidad2" class="menu-item">
+                    <i class="fa-solid fa-2"></i>
+                    <span>Unidad dos</span>
+                </a>
+            </nav>
+        </div>
+
+        <div class="sidebar-bottom">
+            <a href="../index.html" class="logout-btn">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span>Cerrar portafolio</span>
+            </a>
+        </div>
+    </aside>
+
+
+    <!-- ================= PANEL PRINCIPAL DERECHO ================= -->
+    <main class="main-panel">
+
+        <!-- Encabezado superior del Panel -->
+        <header class="panel-header">
+            <div class="header-left">
+                <span class="tag-sub">PORTAFOLIO / 2026-II</span>
+                <h1>Mi proceso académico</h1>
+            </div>
+            <div class="header-badge">
+                <i class="fa-solid fa-check"></i>
+                <span>16 semanas documentadas</span>
+            </div>
+        </header>
+
+        <!-- Pestañas Selectoras de Unidades (Estilo Modelo) -->
+        <div class="unidad-tabs">
+            <a href="#unidad1" class="tab-card active">
+                <span class="tab-num">01</span>
+                <div class="tab-info">
+                    <small>UNIDAD 1</small>
+                    <strong>Taller de Apps VII</strong>
+                </div>
+                <i class="fa-solid fa-arrow-right tab-arrow"></i>
+            </a>
+
+            <a href="#unidad2" class="tab-card">
+                <span class="tab-num">02</span>
+                <div class="tab-info">
+                    <small>UNIDAD 2</small>
+                    <strong>Taller de Apps VIII</strong>
+                </div>
+                <i class="fa-solid fa-arrow-right tab-arrow"></i>
+            </a>
+        </div>
+
+
+        <!-- ================= UNIDAD 01 ================= -->
+        <section id="unidad1" class="seccion-unidad">
+            
+            <div class="unidad-encabezado">
+                <div>
+                    <span class="pill-unidad">UNIDAD 1</span>
+                    <h2>Taller de Aplicaciones - VII</h2>
+                    <p>Exploración, prototipado y desarrollo móvil</p>
+                </div>
+                <div class="semanas-counter">
+                    <strong>08</strong>
+                    <span>SEMANAS DE PROCESO</span>
+                </div>
+            </div>
+
+            <div class="grid-semanas">
+
+                <!-- SEMANA 01 -->
+                <a href="semana01.html" class="tarjeta-semana">
+                    <div class="card-top">
+                        <span class="semana-label">SEMANA 01</span>
+                        <i class="fa-solid fa-circle-check check-icon"></i>
+                    </div>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <h3>Diseño de imagenes en Figma</h3>
+                    <p>Se diseñaron imagenes en el Figma </p>
+                </a>
+
+                <!-- SEMANA 02 -->
+                <a href="semana02.html" class="tarjeta-semana">
+                    <div class="card-top">
+                        <span class="semana-label">SEMANA 02</span>
+                        <i class="fa-solid fa-circle-check check-icon"></i>
+                    </div>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <h3>Proyecto Web </h3>
+                    <p>Los diseños realizados en el figma se implementaran el ApacheNetbeans para que se ejeuten como paginas web y sus respectivos informes. </p>
+                </a>
+
+                <!-- SEMANA 03 -->
+                <a href="semana03.html" class="tarjeta-semana">
+                    <div class="card-top">
+                        <span class="semana-label">SEMANA 03</span>
+                        <i class="fa-solid fa-circle-check check-icon"></i>
+                    </div>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <h3>Sistema de Ventas </h3>
+                    <p>Se diseñara una pagina web en ApacheNetBens sobre sistema de ventas para lo cual se realizara 2 una de venta de boletos y la otra de venta de productos y se adjuntara su informe respectivo. </p>
+                </a>
+
+                <!-- SEMANA 04 -->
+                <a href="semana04.html" class="tarjeta-semana">
+                    <div class="card-top">
+                        <span class="semana-label">SEMANA 04</span>
+                        <i class="fa-solid fa-circle-check check-icon"></i>
+                    </div>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <h3>Implementación de Arquitectura MVC</h3>
+                    <p>Se diseñara una pagina web de la venta de productos que cumpliran algunas funciones que nos pide el trabajo desarrollado y se implementara la Arquitectura MVC en la pagina elaboraday se adjuntara su informe.</p>
+                </a>
+
+                <!-- SEMANA 05 -->
+                <a href="semana05.html" class="tarjeta-semana">
+                    <div class="card-top">
+                        <span class="semana-label">SEMANA 05</span>
+                        <i class="fa-solid fa-circle-check check-icon"></i>
+                    </div>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <h3>Gestión y Diseño de Bases de Datos</h3>
+                    <p>Presentar de Manual Instalacion Microsoft Azure, Manual Instalacion SQL Server y los diagramas de las tablas que se utilizaran para la conexción de la tienda virtual con Base de datos, para lo cual se utlizara SQL SERVER.</p>
+                </a>
+
+                <!-- SEMANA 06 -->
+                <a href="semana06.html" class="tarjeta-semana">
+                    <div class="card-top">
+                        <span class="semana-label">SEMANA 06</span>
+                        <i class="fa-solid fa-circle-check check-icon"></i>
+                    </div>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <h3>Base de Datos </h3>
+                    <p>Presentar el Modelo físico de la Base de Datos de SQL Server en SCRIP y la conexion del login de la Tienda virtual a SQL Server.</p>
+                </a>
+
+                <!-- SEMANA 07 -->
+                <a href="semana07.html" class="tarjeta-semana">
+                    <div class="card-top">
+                        <span class="semana-label">SEMANA 07</span>
+                        <i class="fa-solid fa-clock clock-icon"></i>
+                    </div>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <h3>Base de Datos en Página Web</h3>
+                    <p>Conexion completa de la Base de Datos al 100% con la Página web.
+                    </p>
+                </a>
+
+                <!-- SEMANA 08 -->
+                <a href="semana08.html" class="tarjeta-semana highlight-card">
+                    <div class="card-top">
+                        <span class="semana-label">SEMANA 08</span>
+                        <i class="fa-solid fa-clock clock-icon"></i>
+                    </div>
+                    <div class="card-icon accent-bg">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3>Proyecto Integrador I</h3>
+                    <p>Entrega de unidad</p>
+                </a>
+
+            </div>
+        </section>
+
+
+        <!-- ================= UNIDAD 02 ================= -->
+        <section id="unidad2" class="seccion-unidad" style="margin-top: 5rem;">
+            
+            <div class="unidad-encabezado">
+                <div>
+                    <span class="pill-unidad">UNIDAD 2</span>
+                    <h2>Taller de Aplicaciones - VIII</h2>
+                    <p>Arquitectura avanzada y entregas finales</p>
+                </div>
+                <div class="semanas-counter">
+                    <strong>08</strong>
+                    <span>SEMANAS DE PROCESO</span>
+                </div>
+            </div>
+
+            <div class="grid-semanas">
+
+                <!-- SEMANA 09 a 16 -->
+                <a href="semana09.html" class="tarjeta-semana">
+                    <div class="card-top">
+                        <span class="semana-label">SEMANA 09</span>
+                        <i class="fa-solid fa-circle-check check-icon"></i>
+                    </div>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <h3>Semana 09</h3>
+                    <p>Trabajo de la Semana 09</p>
+                </a>
+
+                <a href="semana10.html" class="tarjeta-semana">
+                    <div class="card-top">
+                        <span class="semana-label">SEMANA 10</span>
+                        <i class="fa-solid fa-circle-check check-icon"></i>
+                    </div>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <h3>Semana 10</h3>
+                    <p>Trabajo de la Semana 10</p>
+                </a>
+
+                <a href="semana11.html" class="tarjeta-semana">
+                    <div class="card-top">
+                        <span class="semana-label">SEMANA 11</span>
+                        <i class="fa-solid fa-circle-check check-icon"></i>
+                    </div>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <h3>Semana 11</h3>
+                    <p>Trabajo de la Semana 11</p>
+                </a>
+
+                <a href="semana12.html" class="tarjeta-semana">
+                    <div class="card-top">
+                        <span class="semana-label">SEMANA 12</span>
+                        <i class="fa-solid fa-circle-check check-icon"></i>
+                    </div>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <h3>Semana 12</h3>
+                    <p>Trabajo de la Semana 12</p>
+                </a>
+
+                <a href="semana13.html" class="tarjeta-semana">
+                    <div class="card-top">
+                        <span class="semana-label">SEMANA 13</span>
+                        <i class="fa-solid fa-circle-check check-icon"></i>
+                    </div>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <h3>Semana 13</h3>
+                    <p>Trabajo de la Semana 13</p>
+                </a>
+
+                <a href="semana14.html" class="tarjeta-semana">
+                    <div class="card-top">
+                        <span class="semana-label">SEMANA 14</span>
+                        <i class="fa-solid fa-circle-check check-icon"></i>
+                    </div>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <h3>Semana 14</h3>
+                    <p>Trabajo de la Semana 14</p>
+                </a>
+
+                <a href="semana15.html" class="tarjeta-semana">
+                    <div class="card-top">
+                        <span class="semana-label">SEMANA 15</span>
+                        <i class="fa-solid fa-clock clock-icon"></i>
+                    </div>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <h3>Semana 15</h3>
+                    <p>Trabajo de la Semana 15</p>
+                </a>
+
+                <a href="semana16.html" class="tarjeta-semana highlight-card">
+                    <div class="card-top">
+                        <span class="semana-label">SEMANA 16</span>
+                        <i class="fa-solid fa-clock clock-icon"></i>
+                    </div>
+                    <div class="card-icon accent-bg">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3>Proyecto Final</h3>
+                    <p>Cierre de portafolio</p>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Pie de página dentro del contenido -->
+        <footer class="main-footer">
+            <span>FABIOLA ROMANI © 2026</span>
+            <span>UNIVERSIDAD PERUANA LOS ANDES — INGENIERÍA DE SISTEMAS</span>
+        </footer>
+
+    </main>
+
+    <script src="../js/chatbot.js"></script>
+
+</body>
+</html>

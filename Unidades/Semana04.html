@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 04 - Taller de Aplicaciones</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/semana-taller.css">
+    <!-- FontAwesome Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body class="dashboard-layout">
+
+    <!-- ================= BARRA LATERAL (SIDEBAR) ================= -->
+    <aside class="sidebar">
+        <div class="sidebar-top">
+            <a href="../index.html" class="sidebar-brand">
+                <div class="logo-box">
+                    <img src="../Imagenes/Upla.png" alt="Logo UPLA">
+                </div>
+                <div class="brand-info">
+                    <strong>UPLA</strong>
+                    <span>Ingeniería de Sistemas</span>
+                </div>
+            </a>
+
+            <!-- PERFIL CON INICIALES FR -->
+            <div class="sidebar-user">
+                <div class="user-avatar-initials">
+                    <span>FR</span>
+                </div>
+                <div class="user-details">
+                    <strong>Fabiola Romani</strong>
+                    <span>Estudiante</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-menu">
+                <a href="unidades.html" class="menu-item">
+                    <i class="fa-solid fa-border-all"></i>
+                    <span>Vista general</span>
+                </a>
+                <a href="unidades.html#unidad1" class="menu-item active">
+                    <i class="fa-solid fa-1"></i>
+                    <span>Unidad uno</span>
+                </a>
+                <a href="unidades.html#unidad2" class="menu-item">
+                    <i class="fa-solid fa-2"></i>
+                    <span>Unidad dos</span>
+                </a>
+            </nav>
+        </div>
+
+        <div class="sidebar-bottom">
+            <a href="unidades.html" class="logout-btn">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span>Volver a Unidades</span>
+            </a>
+        </div>
+    </aside>
+
+
+    <!-- ================= CONTENIDO PRINCIPAL ================= -->
+    <main class="main-panel">
+
+        <!-- Header superior -->
+        <header class="panel-header">
+            <div class="header-left">
+                <span class="tag-sub">TALLER DE APLICACIONES / UNIDAD 1</span>
+                <h1>Semana 04 — Arquitectura MVC</h1>
+            </div>
+            <a href="unidades.html" class="btn-back-header">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span>Volver</span>
+            </a>
+        </header>
+
+        <!-- Banner resumido de la Actividad -->
+        <section class="activity-banner">
+            <div class="activity-info">
+                <div class="activity-icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <div>
+                    <h2>Implementación de Arquitectura MVC</h2>
+                    <p>Desarrollo de un sistema de productos aplicando el patrón de arquitectura Modelo-Vista-Controlador.</p>
+                </div>
+            </div>
+            
+        <!-- ENLACE A FIGMA DESTACADO -->
+            <a href="https://www.figma.com/make/P4LF8KdIwWJoEiz6m9NtZc/Tienda-de-productos-tecnol%C3%B3gicos?p=f&t=MVYfWIBURfcXPUCN-0" 
+               target="_blank" 
+               class="btn-figma-highlight">
+                <i class="fa-brands fa-figma"></i>
+                <span>Ver prototipo en Figma</span>
+                <i class="fa-solid fa-arrow-up-right-from-square arrow-ext"></i>
+            </a>
+        </section>
+    
+
+
+        <!-- ================= GRILLA DE ENTREGAS / TRABAJOS ================= -->
+        <section class="deliverables-section">
+            <div class="section-title">
+                <h3>Archivos y Proyectos Entregados</h3>
+                <span class="badge-count">2 Entregables</span>
+            </div>
+
+            <div class="grid-deliverables">
+
+                <!-- TRABAJO 01: ARCHIVO COMPRIMIDO ZIP -->
+                <div class="deliverable-card">
+                    <div class="card-head">
+                        <span class="file-type badge-rar">
+                            <i class="fa-solid fa-file-zipper"></i> ZIP
+                        </span>
+                        <i class="fa-solid fa-circle-check check-ok"></i>
+                    </div>
+                    <h4>SistemasProductos</h4>
+                    <p>Archivo ZIP que contiene el proyecto desarrollado en Apache NetBeans aplicando MVC.</p>
+                    
+                    <div class="card-actions">
+                        <a href="../Trabajos/Semana 4/SistemasProductos.rar" download class="btn-action btn-view">
+                            <i class="fa-solid fa-download"></i> Descargar ZIP
+                        </a>
+                    </div>
+                </div>
+
+                <!-- TRABAJO 02: INFORME PDF -->
+                <div class="deliverable-card">
+                    <div class="card-head">
+                        <span class="file-type badge-doc">
+                            <i class="fa-regular fa-file-word"></i> DOCX / WORD
+                        </span>
+                        <i class="fa-solid fa-circle-check check-ok"></i>
+                    </div>
+                    <h4>Sistema Producto — Documentación MVC</h4>
+                    <p>Documento técnico correspondiente a la implementación de la Arquitectura MVC en el sistema.</p>
+                    
+                    <div class="card-actions">
+                        <a href="../Trabajos/Semana 4/Informe – Sistema de Gestión de Productos NEBULA.docx" download class="btn-action btn-view">
+                            <i class="fa-solid fa-download"></i> Descargar Documento WORD
+                        </a> 
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Pie de página -->
+        <footer class="main-footer">
+            <span>FABIOLA ROMANI © 2026</span>
+            <span>INGENIERÍA DE SISTEMAS Y COMPUTACIÓN — UPLA</span>
+        </footer>
+
+    </main>
+
+
+    <!-- ================= MODAL VISOR DE IMÁGENES ================= -->
+    <div id="imageModal" class="image-modal">
+        <div class="modal-controls">
+            <button class="modal-btn" onclick="zoomIn()" title="Aumentar Zoom">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+            </button>
+            <button class="modal-btn" onclick="zoomOut()" title="Reducir Zoom">
+                <i class="fa-solid fa-magnifying-glass-minus"></i>
+            </button>
+            <button class="modal-btn" onclick="resetZoom()" title="Restablecer">
+                <i class="fa-solid fa-rotate-left"></i>
+            </button>
+            <button class="modal-btn close-btn" onclick="closeImageModal()" title="Cerrar (Esc)">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <div class="modal-img-container" onclick="closeImageModal()">
+            <img id="modalImg" src="" alt="Vista previa" onclick="event.stopPropagation()">
+        </div>
+    </div>
+
+    <!-- Script del Visor -->
+    <script src="../js/viewer.js"></script>
+
+    <script src="../js/chatbot.js"></script>
+
+</body>
+</html>

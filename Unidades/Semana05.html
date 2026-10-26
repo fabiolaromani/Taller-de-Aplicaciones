@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 05 - Taller de Aplicaciones</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/semana-taller.css">
+    <!-- FontAwesome Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body class="dashboard-layout">
+
+    <!-- ================= BARRA LATERAL (SIDEBAR) ================= -->
+    <aside class="sidebar">
+        <div class="sidebar-top">
+            <a href="../index.html" class="sidebar-brand">
+                <div class="logo-box">
+                    <img src="../Imagenes/Upla.png" alt="Logo UPLA">
+                </div>
+                <div class="brand-info">
+                    <strong>UPLA</strong>
+                    <span>Ingeniería de Sistemas</span>
+                </div>
+            </a>
+
+            <!-- PERFIL CON INICIALES FR -->
+            <div class="sidebar-user">
+                <div class="user-avatar-initials">
+                    <span>FR</span>
+                </div>
+                <div class="user-details">
+                    <strong>Fabiola Romani</strong>
+                    <span>Estudiante</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-menu">
+                <a href="unidades.html" class="menu-item">
+                    <i class="fa-solid fa-border-all"></i>
+                    <span>Vista general</span>
+                </a>
+                <a href="unidades.html#unidad1" class="menu-item active">
+                    <i class="fa-solid fa-1"></i>
+                    <span>Unidad uno</span>
+                </a>
+                <a href="unidades.html#unidad2" class="menu-item">
+                    <i class="fa-solid fa-2"></i>
+                    <span>Unidad dos</span>
+                </a>
+            </nav>
+        </div>
+
+        <div class="sidebar-bottom">
+            <a href="unidades.html" class="logout-btn">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span>Volver a Unidades</span>
+            </a>
+        </div>
+    </aside>
+
+
+    <!-- ================= CONTENIDO PRINCIPAL ================= -->
+    <main class="main-panel">
+
+        <!-- Header superior -->
+        <header class="panel-header">
+            <div class="header-left">
+                <span class="tag-sub">TALLER DE APLICACIONES / UNIDAD 1</span>
+                <h1>Semana 05 — Base de Datos y Entornos de Servidor</h1>
+            </div>
+            <a href="unidades.html" class="btn-back-header">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span>Volver</span>
+            </a>
+        </header>
+
+        <!-- Banner resumido de la Actividad -->
+        <section class="activity-banner">
+            <div class="activity-info">
+                <div class="activity-icon">
+                    <i class="fa-solid fa-database"></i>
+                </div>
+                <div>
+                    <h2>Gestión y Diseño de Bases de Datos</h2>
+                    <p>Documentación de instalación de gestores de BD (SQL Server y Azure) junto con diagramas de flujo y modelos relacionales.</p>
+                </div>
+
+            <!-- ENLACE del MODELO RELACIONAL  -->
+            <a href="https://lucid.app/lucidchart/2e974d34-eac8-490e-b3df-c09e9fdd03ab/edit?viewport_loc=-414%2C-449%2C2864%2C1502%2C0_0&invitationId=inv_f429c462-f24d-4bf3-8d55-cc5b45546f19" 
+               target="_blank" 
+               class="btn-figma-highlight">
+                <i class="fa-brands fa-figma"></i>
+                <span>Ver prototipo Modelo Logico </span>
+                <i class="fa-solid fa-arrow-up-right-from-square arrow-ext"></i>
+            </a>
+        </section>
+
+
+        <!-- ================= GRILLA DE ENTREGAS / TRABAJOS ================= -->
+        <section class="deliverables-section">
+            <div class="section-title">
+                <h3>Archivos y Enlaces Entregados</h3>
+                <span class="badge-count">3 Entregables</span>
+            </div>
+
+            <div class="grid-deliverables">
+
+                <!-- TRABAJO 01: MANUAL DE INSTALACIÓN SQL SERVER -->
+                <div class="deliverable-card">
+                    <div class="card-head">
+                        <span class="file-type badge-doc">
+                            <i class="fa-regular fa-file-word"></i> DOCX / WORD
+                        </span>
+                        <i class="fa-solid fa-circle-check check-ok"></i>
+                    </div>
+                    <h4>Manual de Instalación — SQL Server</h4>
+                    <p>Guía paso a paso para el proceso de instalación y configuración de Microsoft SQL Server.</p>
+                    
+                    <div class="card-actions">
+                        <a href="../Trabajos/Semana 5/MANUAL SQL SERVER 2025.docx" download class="btn-action btn-view">
+                            <i class="fa-solid fa-download"></i> Descargar Documento
+                        </a>
+                    </div>
+                </div>
+
+                <!-- TRABAJO 02: MANUAL DE INSTALACIÓN MICROSOFT AZURE -->
+                <div class="deliverable-card">
+                    <div class="card-head">
+                        <span class="file-type badge-doc">
+                            <i class="fa-regular fa-file-word"></i> DOCX / WORD
+                        </span>
+                        <i class="fa-solid fa-circle-check check-ok"></i>
+                    </div>
+                    <h4>Manual de Instalación — Microsoft Azure</h4>
+                    <p>Documentación sobre el despliegue, configuración y entorno de servicios en Microsoft Azure.</p>
+                    
+                    <div class="card-actions">
+                        <a href="../Trabajos/Semana 5/Manual de Registro en Microsoft Azure.docx" download class="btn-action btn-view">
+                            <i class="fa-solid fa-download"></i> Descargar Documento
+                        </a>
+                    </div>
+                </div>
+
+            
+                <!-- TRABAJO 04: Imagen dek diagrama realcional  -->
+                <div class="deliverable-card">
+                    <div class="card-head">
+                        <span class="file-type badge-image">
+                            <i class="fa-regular fa-image"></i> PNG / INFOGRAFÍA
+                        </span>
+                        <i class="fa-solid fa-circle-check check-ok"></i>
+                    </div>
+                    <h4>Modelo logico de la Base de Datos </h4>
+                    <p>Modelo Logico de la Base de Datos en un diagrama Relacional</p>
+                    
+                    <div class="card-actions">
+                        <a href="../Trabajos/Semana 5/Modelo relacional .png" target="_blank" class="btn-action btn-view">
+                            <i class="fa-solid fa-eye"></i> Ver
+                        </a>
+                        <a href="../Trabajos/Semana 5/Modelo relacional .png" download class="btn-action btn-download">
+                            <i class="fa-solid fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Pie de página -->
+        <footer class="main-footer">
+            <span>FABIOLA ROMANI © 2026</span>
+            <span>INGENIERÍA DE SISTEMAS Y COMPUTACIÓN — UPLA</span>
+        </footer>
+
+    </main>
+
+    <!-- ================= MODAL VISOR DE IMÁGENES ================= -->
+    <div id="imageModal" class="image-modal">
+        <!-- Barra superior de botones -->
+        <div class="modal-controls">
+            <button class="modal-btn" onclick="zoomIn()" title="Aumentar Zoom">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+            </button>
+            <button class="modal-btn" onclick="zoomOut()" title="Reducir Zoom">
+                <i class="fa-solid fa-magnifying-glass-minus"></i>
+            </button>
+            <button class="modal-btn" onclick="resetZoom()" title="Restablecer">
+                <i class="fa-solid fa-rotate-left"></i>
+            </button>
+            <button class="modal-btn close-btn" onclick="closeImageModal()" title="Cerrar (Esc)">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <!-- Contenedor donde se cargará la imagen -->
+        <div class="modal-img-container" onclick="closeImageModal()">
+            <img id="modalImg" src="" alt="Vista previa" onclick="event.stopPropagation()">
+        </div>
+    </div>
+
+    <!-- Script del Visor -->
+    <script src="../js/viewer.js"></script>
+
+    <script src="../js/chatbot.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,431 @@
+/* --- RESET Y VARIABLES DE TEMA --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+:root {
+    --bg-dark: #121312;
+    --bg-light: #f3f2ec;
+    --card-white: #ffffff;
+    --primary-accent: #ccff00; /* Verde Neón */
+    --text-dark: #121312;
+    --text-muted: #787978;
+    --text-light-muted: #a0a1a0;
+    --border-dark: rgba(255, 255, 255, 0.1);
+    --border-light: rgba(0, 0, 0, 0.08);
+}
+
+body.dashboard-layout {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ================= SIDEBAR IZQUIERDA ================= */
+.sidebar {
+    width: 280px;
+    background-color: var(--bg-dark);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 1.5rem;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.sidebar-top {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.sidebar-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.logo-box {
+    width: 38px;
+    height: 38px;
+    background-color: var(--primary-accent);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+.logo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.brand-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-info strong {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.brand-info span {
+    font-size: 0.7rem;
+    color: var(--text-light-muted);
+}
+
+/* Usuario en Sidebar */
+.sidebar-user {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-dark);
+}
+
+.user-avatar img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    border: 1px solid var(--border-dark);
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-details strong {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.user-details span {
+    font-size: 0.7rem;
+    color: var(--text-light-muted);
+}
+
+/* Menú Sidebar */
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    color: var(--text-light-muted);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.menu-item i {
+    font-size: 0.9rem;
+    width: 18px;
+    text-align: center;
+}
+
+.menu-item:hover,
+.menu-item.active {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: var(--primary-accent);
+}
+
+.logout-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: var(--text-light-muted);
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: color 0.2s ease;
+}
+
+.logout-btn:hover {
+    color: var(--primary-accent);
+}
+
+
+/* ================= PANEL PRINCIPAL DERECHO ================= */
+.main-panel {
+    margin-left: 280px;
+    flex: 1;
+    padding: 3rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+/* Panel Header */
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.tag-sub {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: var(--text-muted);
+}
+
+.panel-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-top: 0.3rem;
+}
+
+.header-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--primary-accent);
+    color: var(--text-dark);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+/* Tabs de Unidades */
+.unidad-tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.tab-card {
+    background-color: #e5e4dc;
+    border: 1px solid var(--border-light);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    text-decoration: none;
+    color: var(--text-dark);
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.tab-card.active {
+    background-color: var(--bg-dark);
+    color: #ffffff;
+}
+
+.tab-num {
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.tab-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.tab-info small {
+    font-size: 0.65rem;
+    letter-spacing: 1px;
+    color: var(--primary-accent);
+    font-weight: 700;
+}
+
+.tab-card:not(.active) .tab-info small {
+    color: var(--text-muted);
+}
+
+.tab-info strong {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.tab-arrow {
+    font-size: 1rem;
+    color: var(--primary-accent);
+}
+
+.tab-card:not(.active) .tab-arrow {
+    color: var(--text-dark);
+}
+
+/* Sección Unidad */
+.unidad-encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+}
+
+.pill-unidad {
+    background-color: var(--primary-accent);
+    color: var(--text-dark);
+    font-size: 0.65rem;
+    font-weight: 800;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    letter-spacing: 1px;
+}
+
+.unidad-encabezado h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-top: 0.5rem;
+}
+
+.unidad-encabezado p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.semanas-counter {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+.semanas-counter strong {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.semanas-counter span {
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    font-weight: 700;
+    letter-spacing: 1px;
+    max-width: 80px;
+    line-height: 1.2;
+}
+
+/* Grilla de Semanas */
+.grid-semanas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.tarjeta-semana {
+    background-color: var(--card-white);
+    border: 1px solid var(--border-light);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjeta-semana:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.semana-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    letter-spacing: 1px;
+}
+
+.check-icon {
+    color: var(--primary-accent);
+    background-color: var(--bg-dark);
+    border-radius: 50%;
+    font-size: 0.9rem;
+}
+
+.clock-icon {
+    color: #b0b0b0;
+    font-size: 0.9rem;
+}
+
+.card-icon {
+    width: 36px;
+    height: 36px;
+    background-color: #f3f3f0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-dark);
+    font-size: 0.9rem;
+}
+
+.card-icon.accent-bg {
+    background-color: var(--primary-accent);
+}
+
+.tarjeta-semana h3 {
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.tarjeta-semana p {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+/* Main Footer */
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-light);
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    letter-spacing: 1px;
+    margin-top: 3rem;
+}
+
+/* ================= RESPONSIVO ================= */
+@media (max-width: 1200px) {
+    .grid-semanas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+    .main-panel {
+        margin-left: 0;
+        padding: 1.5rem;
+    }
+    .grid-semanas {
+        grid-template-columns: 1fr;
+    }
+}
